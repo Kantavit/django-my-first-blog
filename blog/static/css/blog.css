@@ -1,53 +1,65 @@
-.page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
+h1 {
+    color:  rgb(29, 163, 187);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgb(4, 240, 181);
+    margin-top: 50px;
+  }
+  h2 {
+    color:  rgb(29, 163, 187);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgb(42, 247, 230);
+    margin-top: 50px;
+  }
+  p {
+    color:  rgb(29, 163, 187);
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px rgb(42, 247, 230);
+    padding-left: 2cm;
+  }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
+  /* input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  } */
 
-.content {
-    margin-left: 40px;
-}
+  /* input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  } */
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
+  /* input[type=submit]:hover {
+      background-color: #45a049;
+  } */
 
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h2 a, .post h2 a:visited {
-    color: #000000;
-}
+  div {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      /* border-radius: 5px; */
+     /* padding-left: 20px; */
+      /* color: #ffffff; */
+  }
 
 body {
-    background-image: url("https://wallpaperaccess.com/full/96462.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url("/static/images/mountain.jpg");
+}
+
+p.important {
+    color: rgb(29, 163, 187);
+    padding-bottom: 2.5cm;
 }
