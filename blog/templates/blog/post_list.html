@@ -11,7 +11,8 @@
     </head>
     <body>
         <div class="ui container">
-            <div class="ui segments" style="margin-top: 7%;margin-bottom: 25%;">
+            <div class="ui segments" style="margin-top: 15%;margin-bottom: 15%;">
+
                 <div class="ui teal segment">
                     <div class="ui grid">
                         <div class="column">
@@ -21,24 +22,8 @@
                 </div>
 
                 <div class="ui divider"></div>
-                <!-- <div class="ui two row vertically padded grid">
-                    {% for post in posts %}
-                        <div class="row">
-                            <h2>{{ post.title }}</h2>
-                            <p>{{ post.text|linebreaksbr }}</p>
-                            <p>published: {{ post.published_date }}</p>
-                        </div>
-                    {% endfor %}
-                </div> -->
 
-                <!-- {% for post in posts %} -->
-                    <!-- <div>
-                        <h2>{{ post.title }}</h2>
-                        <p>{{ post.text|linebreaksbr }}</p>
-                        <p>published: {{ post.published_date }}</p>
-                        <div class="ui divider"></div>
-                    </div> -->
-
+                {% for post in posts %}
                     <div class="ui two column vertically padded grid">
                         <div class="column">
                             <h2>{{ post.title }}</h2>
@@ -49,20 +34,24 @@
                         </div>
                         
                     </div>
-                <!-- {% endfor %} -->
-                <!-- <div class="ui divider"></div> -->
                 <div class="ui divider"></div>
-                <div class="ui grid">
-                    <div class="two wide column">
-                        <img class="ui medium circular image" src="{% static 'images\Jerry_Triangle.png' %}"/>
-                    </div>
-                    <div class="three wide column">
-                    <p class="important">จัดทำโดย</p>
-                    </div>
-                    <div class="ten wide column">
-                    <p class="important">นายกันตวิชญ์ เจนพิทยา รหัส 6110110019 SEC 01</p>
+                {% endfor %}
+
+                <div class="ui celled grid">
+                    <div class="row">
+                        <div class="three wide column">
+                            <img class="ui medium circular image" src="{% static 'images\Jerry_Triangle.png' %}"/>
+                        </div>
+                        <div class="thirteen wide column important">
+                            <div class="centered">
+                                <br>
+                                <br>
+                                <p class="important">จัดทำโดย: นายกันตวิชญ์ เจนพิทยา รหัส 6110110019 SEC 01</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>
